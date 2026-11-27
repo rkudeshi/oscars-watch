@@ -1,0 +1,31 @@
+{
+ "_note": "Config for build.py. Titles match loosely (case, accents, punctuation ignored).",
+ "film_aliases": {
+  "_note": "Alternate Gold Derby spelling -> canonical title, when one film shows up under two names.",
+  "The Black Ball": "La Bola Negra"
+ },
+ "display_titles": {
+  "_note": "Canonical title -> title shown on the page (use the title a film actually goes by, e.g. its foreign-language title)."
+ },
+ "tmdb_ids": {
+  "_note": "Canonical title -> TMDB movie id, to fix or force a match for release dates, streaming and poster."
+ },
+ "documentaries": [],
+ "show_documentaries": [
+  "You Can See Everything"
+ ],
+ "justwatch_ids": {
+  "_note": "Canonical title -> JustWatch id (tm...), when the automatic title search misses or picks the wrong film.",
+  "All of a Sudden": "tm1941841",
+  "Woman Unknown": "tm2949948",
+  "Linda Perry: Let It Die Here": "tm1481689"
+ },
+ "poster_urls": {
+  "_note": "Canonical title -> poster image URL, when JustWatch's US poster is the wrong one (e.g. translated title or extra text).",
+  "La Bola Negra": "https://images.justwatch.com/poster/350985376/s332/la-bola-negra.jpg",
+  "Fjord": "https://images.justwatch.com/poster/350595075/s332/fjord.jpg"
+ },
+ "reddit_threads": {
+  "_note": "Canonical title -> r/movies official discussion thread URL, so the after-the-movie page opens that thread (in Narwhal) instead of a search."
+ }
+}

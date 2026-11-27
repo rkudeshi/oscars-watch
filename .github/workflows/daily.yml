@@ -1,0 +1,63 @@
+name: Daily odds refresh
+
+on:
+  schedule:
+    - cron: "17 13 * * *"   # 13:17 UTC = 5:17 AM Pacific, after Gold Derby's overnight update
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["builder/template.html", "builder/public.py", ".github/workflows/daily.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-refresh
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: pip install pillow
+
+      - name: Build (Gold Derby, JustWatch, The Numbers, Wikipedia)
+        working-directory: builder
+        run: python3 build.py --public --out ../out
+
+      - name: Make the public page
+        run: python3 builder/public.py --src out --dst site
+
+      - name: Save today's odds and caches
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add builder/
+          if git diff --cached --quiet; then echo "nothing new"; else
+            git commit -m "Daily refresh $(date -u +%F)"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
