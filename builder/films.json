@@ -422,6 +422,10 @@
      }
     ],
     "slug": "avedon"
+   },
+   "stinger": {
+    "at": "2026-11-27",
+    "none": true
    }
   },
   "jw": "tm2877895",
@@ -895,7 +899,7 @@
     "slug": "by-any-means-2026"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -999,7 +1003,7 @@
     "slug": "clayface"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -1088,7 +1092,7 @@
     "slug": "closure-2026"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -1973,7 +1977,7 @@
     "slug": "everybody-to-kenmure-street"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -3647,7 +3651,7 @@
     "slug": "linda-perry-let-it-die-here"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -3739,7 +3743,7 @@
     "slug": "madden-2026"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -3822,7 +3826,7 @@
     "slug": "the-mandalorian-and-grogu"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -4366,7 +4370,7 @@
     "slug": "the-mosquito-bowl"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -4624,7 +4628,7 @@
     "slug": "my-undesirable-friends-part-ii-exile"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -4781,7 +4785,7 @@
     "slug": "nuisance-bear-2026"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -5552,7 +5556,7 @@
     "slug": "power-ballad"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -6713,7 +6717,7 @@
     "slug": "tuner"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
@@ -7226,7 +7230,7 @@
     "slug": "wuthering-heights-2026"
    },
    "stinger": {
-    "at": "2026-11-22",
+    "at": "2026-11-27",
     "none": true
    }
   },
